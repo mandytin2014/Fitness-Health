@@ -36,14 +36,19 @@ $(".menu__item--col--mb").click(function(){
 })
 
 
-
-// 置頂
+// 置頂按鈕
 $('.top').on('click', function (e) {
-    e.preventDefault();
-
     $('html,body').animate({ // 有些瀏覽器只支援html或body 
-    scrollTop: 0
-    }, 110)
+        scrollTop: 0
+    }, 110);
+    
+    $(this).css('animation', 'jump 0.8s');
+});
+
+$(".top").each(function() {
+    $(this)[0].addEventListener("animationend",function(){
+        $(this).css("animation","");
+    });
 });
 
 
