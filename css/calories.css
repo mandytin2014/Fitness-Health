@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none;
 }
@@ -22,12 +23,12 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 40px;
-  font-family: "JasonHandwriting4-Regular";
+  font-family: cute;
 }
 
 @font-face {
-  font-family: "JasonHandwriting4-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@20210716/webfont/JasonHandwriting1-Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@20210716/webfont/JasonHandwriting1-Regular.woff") format("woff");
+  font-family: cute;
+  src: url(/清松手寫體2.ttf);
 }
 
 html {
