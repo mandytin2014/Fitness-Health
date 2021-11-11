@@ -22,11 +22,11 @@
         <div class="index__content ">
             <ul class="index__item">
                 <span class="index__text space"><li >目錄</li></span>
-                <a href="#TDEE" class="index__link"><li class="index__list">每日總消耗能量<br> TDEE</li></a>
-                <a href="#BMR" class="index__link"><li class="index__list">基礎代謝率<br> BMR</li></a>
-                <a href="#TEA" class="index__link"><li class="index__list">運動消耗<br> TEA</li></a>
-                <a href="#TEF" class="index__link"><li class="index__list">食物熱效應<br> TEF</li></a>
-                <a href="#BMR__TDEE" class="index__link"><li class="index__list">BMR & TDEE<br> 計算機</li></a>
+                <a class="index__link"><li class="index__list" data-part="one">每日總消耗能量<br> TDEE</li></a>
+                <a class="index__link"><li class="index__list" data-part="two">基礎代謝率<br> BMR</li></a>
+                <a class="index__link"><li class="index__list" data-part="three">運動消耗<br> TEA</li></a>
+                <a class="index__link"><li class="index__list" data-part="four">食物熱效應<br> TEF</li></a>
+                <a class="index__link"><li class="index__list" data-part="five">BMR & TDEE<br> 計算機</li></a>
             </ul>          
             
         </div>
@@ -37,8 +37,7 @@
         <section class="body__content">
             <section class="title">
                 <div class="title__content">
-                    <i class="far fa-times close__icon title__ham--close"></i>
-                    <img class="title__ham mb" src="./icons/ham.png" alt="">
+                    <i class="fad fa-bars title__ham"></i>
                     <img class="title__logo" src="./icons/icon__circle.png" alt="">
                     <h1 class="title__text">Fitness <br><span class="font__type">&Health</span></h1>
                 </div>
@@ -52,7 +51,7 @@
                             <a target="_self" href="#" class="list__link" style="color: #FF5656;"><i class="fas fa-child title__icon"></i>了解身體</a>
                         </li>
                         <li class="menu__item menu__item--col">
-                            <a  class="list__link"><i class="fas fa-running title__icon"></i>動起來</a>
+                            <a  class="list__link" style="cursor: default;"><i class="fas fa-running title__icon"></i>動起來</a>
                             <div class="dropdown__list">
                                 <a target="_self" href="workout__catalog.html" class="dropdown__list--text">運動分類</a>
                                 <a target="_self" href="workout__video.html" class="dropdown__list--text">居家運動</a>
@@ -79,7 +78,7 @@
                         <a target="_self" href="#" class="list__link--mb" style="color: #FF5656;"><i class="fas fa-child title__icon"></i>了解身體</a>
                     </li>
                     <li class="menu__item--mb menu__item--col--mb">
-                        <span  class="list__link--mb" style="color: #606060;"><i class="fas fa-running title__icon"></i>動起來<i class="far fa-angle-down dropdown__icon"></i></span>
+                        <span  class="list__link--mb" style="color: #606060;cursor: default;"><i class="fas fa-running title__icon"></i>動起來<i class="far fa-angle-down dropdown__icon"></i></span>
                         <div class="dropdown__list--mb">
                             <a target="_self" href="workout__catalog.html" class="dropdown__list--text">運動分類</a>
                             <a target="_self" href="workout__video.html" class="dropdown__list--text">居家運動</a>
@@ -119,11 +118,11 @@
             <div >
                 
                 <!-- 每日總消耗能量TDEE -->
-                <h2 id="TDEE" class="sub__title center" id="TDEE"><img class="subtitle__logo" src="./icons/clip-1470.png" alt="">每日總消耗能量TDEE</h2>
+                <h2 id="one" class="sub__title center"><img class="subtitle__logo" src="./icons/clip-1470.png" alt="">每日總消耗能量TDEE</h2>
                 <img class="index__pic pic__center" src="./pictures/tdee.jpg" alt="picture">
                 <div class="center space"><p class="formula">TDEE = BMR + TEA + TEF <br>總熱量消耗 = 基礎代謝率＋運動消耗＋食物熱效應</p></div>
                 <!-- 基礎代謝率BMR -->
-                <h2 id="BMR" class="sub__title center"><img class="subtitle__logo" src="./icons/clip-123.png" alt=""> 基礎代謝率 BMR</h2>
+                <h2  id="two" class="sub__title center"><img class="subtitle__logo" src="./icons/clip-123.png" alt=""> 基礎代謝率 BMR</h2>
                 <p class="center">躺著耍廢當一團會呼吸的肉，為了維持生命，身體仍會消耗能量，而年齡、體重、肌肉量、賀爾蒙都是影響基礎代謝率的關鍵。</p>
                 <!-- 基礎代謝迷思 -->
                 <h2 class="subtitle__red center sub__title" >基礎代謝率的迷思</h2>
@@ -154,20 +153,20 @@
                     <img class="pic__side" src="./pictures/168.png" alt="">
                 </div>
                 <!-- 運動消耗 -->
-                <h2 id="TEA" class="sub__title center"><img class="subtitle__logo" src="./icons/clip-1479.png" alt=""> 運動消耗 TEA <span class="none">(Thermic Effect of Activity)</span> </h2>
+                <h2 id="three" class="sub__title center"><img class="subtitle__logo" src="./icons/clip-1479.png" alt=""> 運動消耗 TEA <span class="none">(Thermic Effect of Activity)</span> </h2>
                 <p >運動所佔的熱量消耗，僅僅20%?! 回想自己努力運動搞得形象盡毀的模樣，是不是覺得白費了呢？先別灰心，採用聰明的運動方式，才更能擊退頑固的脂肪!</p>
                 <img class="pic__center" src="./pictures/workout.jpg" alt="">
                 <p class="p__center" >少說廢話！ <a style="color: #FF5656;font-weight:bold ;" href="workout__video.html">Let's get started！</a></p>
                 
                 <!-- 食物熱效應 -->
-                <h2 id="TEF" class="sub__title center"><img class="subtitle__logo" src="./icons/fire.png" alt=""> 食物熱效應 TEF <span class="none">(Thermic Effect of Food)</span> </h2>
+                <h2 id="four" class="sub__title center"><img class="subtitle__logo" src="./icons/fire.png" alt=""> 食物熱效應 TEF <span class="none">(Thermic Effect of Food)</span> </h2>
                 <p >人體為了消化、吸收、代謝食物，包括咀嚼、吞嚥等所消耗的熱量。
                     飲食的營養來源分為三大類：醣類、脂肪、蛋白質，產熱效應不一樣，依序為下列...</p>
                 <h2 class="space__bg p__center"> 蛋白質30% > 醣類 6~8% > 脂肪 4%</ㄘ>
                 <h2 class="center"><i class="fas fa-crown tip__icon space"></i>懶人小撇步</h2>
                 <p class="p__center"> 蛋白質所消耗的熱量遠超過醣類和脂肪，因此飲食中提高蛋白質比例是提高TEDD的秘訣！</p>
                 <!-- BMR & TDEE計算機 -->
-                <h2 id="BMR__TDEE" class="sub__title center"><img class="subtitle__logo" src="./pictures/calculator.png" alt="">BMR & TDEE 計算機</h2>
+                <h2 id="five" class="sub__title center"><img class="subtitle__logo" src="./pictures/calculator.png" alt="">BMR & TDEE 計算機</h2>
                 <div class="bmr__tdee">
                     <form action="" class="side__side">
                         <h2 class="subtitle__red center">基礎代謝率(BMR)計算機</h2>

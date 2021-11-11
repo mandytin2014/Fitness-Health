@@ -30,10 +30,6 @@ p {
   src: url("https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@20210716/webfont/JasonHandwriting1-Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@20210716/webfont/JasonHandwriting1-Regular.woff") format("woff");
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -130,38 +126,32 @@ html {
   }
 }
 
-.nav--mb {
-  width: 100%;
-}
-
-.nav--mb .menu--mb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: flex-start;
-          flex-direction: flex-start;
+.menu--mb {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 1rem 0;
-  background-color: #fff;
+  position: relative;
+  right: 20px;
   display: none;
 }
 
 @media screen and (min-width: 1000px) {
-  .nav--mb .menu--mb {
+  .menu--mb {
     display: none !important;
   }
 }
 
-.nav--mb .menu__item--mb {
+.menu__item--mb {
   cursor: pointer;
+  text-align: center;
 }
 
-.nav--mb .menu__item--mb:hover > .list__link--mb {
+.menu__item--mb:hover > .list__link--mb {
   color: #559dd8;
 }
 
-.nav--mb .list__link--mb, .nav--mb .dropdown__list--text {
+.list__link--mb, .dropdown__list--text {
   padding-left: 2rem;
   font-size: 16px;
   font-weight: 550;
@@ -172,11 +162,11 @@ html {
   width: 100%;
 }
 
-.nav--mb .title__icon {
+.title__icon {
   margin-right: .75rem;
 }
 
-.nav--mb .dropdown__list--mb {
+.dropdown__list--mb {
   display: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,18 +185,18 @@ html {
       flex-wrap: wrap;
 }
 
-.nav--mb .dropdown__icon {
+.dropdown__icon {
   position: absolute;
   left: 120%;
   top: 12%;
 }
 
-.nav--mb .dropdown__list--text {
+.dropdown__list--text {
   padding-left: 55px;
   font-size: 14px;
 }
 
-.nav--mb .dropdown__list--text:hover {
+.dropdown__list--text:hover {
   background-color: #daf4ff;
 }
 
@@ -309,6 +299,8 @@ html {
 }
 
 .title {
+  position: -webkit-sticky;
+  position: sticky;
   display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -329,9 +321,10 @@ html {
 
 .title .title__ham {
   position: absolute;
-  left: 20px;
+  color: #ff9a9a;
+  font-size: 25px;
+  right: 50px;
   display: none;
-  width: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -340,13 +333,8 @@ html {
   }
 }
 
-.title .title__ham--close {
-  font-size: 30px;
-  color: #606060;
-  position: absolute;
-  left: 20px;
-  top: 55px;
-  display: none;
+.title .change__color {
+  color: #A6A6A6;
 }
 
 .title .title__content {

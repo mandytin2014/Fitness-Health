@@ -12,21 +12,31 @@ $(function(){
         $(this).css("color","#559dd8");
     })
 
+    // 點選目錄上下移動
+    $(".index__link").click(function(e){
+        let pos = e.target.dataset.part;
+        $("html,body").animate({"scrollTop":$("#"+pos).offset().top-230}, 1000)
+    })
+
 
 
     // 漢堡選單
-    $(".title__ham").click(function(){
-        $(".menu--mb").slideToggle("normal");
-        $(".title__ham").slideToggle("normal");
-        $(".title__logo").slideToggle("normal");
-        $(".title__ham--close").show("normal");
     
+    $(".title__ham").click(function(){
+        $(".title__ham").toggleClass("change__color")
+        $(".menu--mb").slideToggle("normal");  
     })
-    $(".title__ham--close").click(function(){
-        $(".title__ham--close").slideToggle("normal")
-        $(".menu--mb").slideToggle("normal");
-        $(".title__logo").slideToggle("normal");
-        $(".title__ham").slideToggle("normal")
+
+    $(window).resize(function(){
+        let width = window.innerWidth;
+        $(".menu--mb").fadeOut()
+        if(width < 1000){
+            $(".title__ham").show();
+        }else if(width >= 1000){
+            $(".title__logo").show("normal");
+            $(".menu--mb").hide();
+            $(".title__ham").hide();
+        }
     })
 
     // 動起來navbar
@@ -36,12 +46,11 @@ $(function(){
     })
 
 
-
     // 置頂按鈕
     $('.top').on('click', function (e) {
         $('html,body').animate({ // 有些瀏覽器只支援html或body 
             scrollTop: 0
-        }, 110);
+        }, 1000);
         
         $(this).css('animation', 'jump 0.8s');
     });
